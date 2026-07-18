@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+darkHeader: true
+---
+<article class="post">
+  <header class="post-header">
+    <div class="wrap">
+      <h1>{{ title }}</h1>
+      <div class="post-meta">
+        <span class="insight-tag">{{ category }}</span>
+        <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+        <span>Revora team</span>
+      </div>
+    </div>
+  </header>
+  <div class="post-body">
+    <a class="back-link" href="/insights/">All insights</a>
+    {{ content | safe }}
+  </div>
+  <div class="post-footer">
+    <div class="post-cta">
+      <h3>Sound familiar?</h3>
+      <p>If this article describes something happening in your business, a short conversation is the easiest way to work out whether it's worth acting on.</p>
+      <a class="btn btn--primary" href="/contact/">Start a conversation</a>
+    </div>
+  </div>
+</article>

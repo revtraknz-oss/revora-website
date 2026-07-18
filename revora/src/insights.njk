@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: "Insights"
+description: "Practical thinking on FMCG pricing, promotions, portfolio and trade strategy from the Revora team, written for the New Zealand market."
+permalink: /insights/
+darkHeader: true
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow eyebrow--dark">Insights</span>
+    <h1>Notes from the trade</h1>
+    <p class="lede">Practical thinking on pricing, promotions, portfolio and trade &mdash; written from the New Zealand market, for the people who work in it. No gated PDFs, no fluff.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="post-list">
+      {% for post in collections.insights %}
+      <article class="insight-card reveal">
+        <a class="insight-media" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+          {% if post.data.image %}
+          <img src="{{ post.data.image }}" alt="" loading="lazy">
+          {% else %}
+          <div class="pattern-fill">
+            <svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8"  y="40" width="16" height="26" fill="rgba(255,255,255,0.25)"/>
+              <rect x="32" y="28" width="16" height="38" fill="rgba(255,255,255,0.25)"/>
+              <rect x="56" y="46" width="16" height="10" fill="rgba(255,255,255,0.35)"/>
+              <rect x="80" y="12" width="16" height="54" fill="#4FA57F"/>
+            </svg>
+          </div>
+          {% endif %}
+        </a>
+        <div class="insight-body">
+          <span class="insight-tag">{{ post.data.category }}</span>
+          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <p>{{ post.data.excerpt }}</p>
+          <span class="insight-date">{{ post.date | readableDate }}</span>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-inner">
+      <h2>Reading about the problem is one thing. Fixing it is more fun.</h2>
+      <p>If something here sounds like your business, that's usually a good sign it's worth a conversation.</p>
+      <a class="btn btn--primary" href="/contact/">Talk to us</a>
+    </div>
+  </div>
+</section>

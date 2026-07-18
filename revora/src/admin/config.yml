@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: /
+display_url: /
+logo_url: /assets/favicon.svg
+
+collections:
+  - name: "insights"
+    label: "Insights (Blog)"
+    label_singular: "Insight"
+    folder: "src/posts"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date | date('DD MMM YYYY')}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "The headline shown on the site." }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD MMM YYYY", time_format: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Pricing", "Promotions & Trade", "Portfolio", "Trade Terms", "Commercial Capability"]
+      - { label: "Summary", name: "excerpt", widget: "text", hint: "One or two sentences shown on the Insights page and homepage cards." }
+      - { label: "Header image", name: "image", widget: "image", required: false, hint: "Optional. Shown on the article card. If left empty, a branded graphic is used instead." }
+      - { label: "Body", name: "body", widget: "markdown", hint: "The article itself. Use Heading 2 for section headings." }
