@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "eyebrow": "Revenue Growth Management Advisory · New Zealand",
+    "headline": "Most FMCG suppliers leave 15–25% of their promotional ROI on the table.",
+    "lede": "Northform helps New Zealand FMCG suppliers find it. We work through your pricing, trade investment, portfolio mix and customer economics, then help build the discipline that keeps the gains.",
+    "note": "Not sure whether that applies to you? That question is what the first conversation is for.",
+    "image": "/assets/img/aisle-blur.jpg",
+    "image_alt": "A supermarket aisle, shot with shallow focus"
+  },
+  "credentials": [
+    {
+      "figure": "20+ years",
+      "caption": "In FMCG commercial roles, not advising on them from outside"
+    },
+    {
+      "figure": "$250M+",
+      "caption": "Portfolio revenue managed across several grocery categories"
+    },
+    {
+      "figure": "NZ grocery",
+      "caption": "Retailer dynamics and shopper behaviour, learned in the market rather than read about"
+    }
+  ],
+  "context": {
+    "eyebrow": "The context",
+    "heading": "The margin squeeze is real. There’s a way through it.",
+    "intro": "Four pressures are working on New Zealand FMCG suppliers at once. Most teams respond by cutting costs or absorbing the loss. Both are choices, and neither is the only one available.",
+    "pressures": [
+      {
+        "title": "Cost inflation",
+        "body": "Input and freight costs keep moving. Recovering them through price is slower and harder than the increase itself."
+      },
+      {
+        "title": "Retailer consolidation",
+        "body": "Fewer and larger customers mean tougher negotiations, and less room to be wrong about your terms."
+      },
+      {
+        "title": "Shopper price sensitivity",
+        "body": "Shoppers are trading down and buying on deal. Every pricing option now comes with a volume question attached."
+      },
+      {
+        "title": "Promotional intensity",
+        "body": "Depth and frequency stay high while returns fall. Spend goes up and incremental volume does not."
+      }
+    ],
+    "closing": "The levers worth working are the ones you control. Pricing, trade investment, portfolio mix and customer terms get decided inside your business rather than by the market, and that is usually where the margin is sitting."
+  },
+  "practices": {
+    "eyebrow": "What we do",
+    "heading": "Where we find margin",
+    "intro": "Four areas where margin usually sits. What is available in each one depends on your numbers, but this is where we look first.",
+    "items": [
+      {
+        "label": "Pricing",
+        "heading": "Recover margin through smarter pricing",
+        "figure": "2–4%",
+        "figure_caption": "Gross margin · typical range",
+        "problem": "Conservative pricing and a pack architecture that grew by accident are two of the most common places margin sits unnoticed. Price rises get delayed, then taken in a lump. Pack sizes stop telling a coherent story across channels.",
+        "method": "We build pricing architecture on elasticity evidence, shopper price perception and competitive position. That means clear price ladders, deliberate pack roles, and price moves designed to recover cost without giving up volume.",
+        "anchor": "pricing"
+      },
+      {
+        "label": "Trade investment",
+        "heading": "Stop wasting trade investment",
+        "figure": "15–25%",
+        "figure_caption": "Promotional ROI · typical range",
+        "problem": "Promotional calendars run on autopilot. Depth, frequency and timing get repeated because that is what happened last year, and a large share of the spend delivers little or no incremental volume.",
+        "method": "We work through your promotional history to separate genuine incremental volume from pantry loading and cannibalisation. Then we build a framework that puts investment behind the events that pay and retires the ones that don’t.",
+        "anchor": "trade-investment"
+      },
+      {
+        "label": "Portfolio & mix",
+        "heading": "Make your range work for margin",
+        "figure": "1–3%",
+        "figure_caption": "Bottom line · typical range",
+        "problem": "Range reviews usually get run defensively, where the goal is not losing facings. That turns a margin decision into a shelf-space negotiation, and the mix drifts toward whatever sells rather than whatever earns.",
+        "method": "We work out where value is actually created across SKUs, packs and channels, so every range change is intentional and argued on margin as well as category size. You go into the review with a proposal of your own.",
+        "anchor": "portfolio"
+      },
+      {
+        "label": "Trade terms",
+        "heading": "Build trade terms you can defend",
+        "figure": "Customer P&L",
+        "figure_caption": "Clarity by customer",
+        "problem": "Terms get negotiated one customer at a time, over years, without a framework tying them together. You end up with inconsistencies you cannot explain in the room, and customer relationships that cost more than they return.",
+        "method": "We build transparent trade investment structures tied to customer performance and strategic priority, so you can see profitability by customer, defend the terms you offer, and put investment where it earns its place.",
+        "anchor": "trade-terms"
+      }
+    ],
+    "disclaimer": "About those ranges. They describe where margin typically sits in FMCG businesses of this profile. They are the size of the prize rather than a promise. What is actually available in your business depends on your data, and finding that out is the first thing we do together."
+  },
+  "how": {
+    "eyebrow": "How we work",
+    "heading": "From diagnosis to discipline",
+    "intro": "We don’t hand over a hundred-page deck and disappear. We work alongside your team to find the margin leaks, decide what to do about them, and embed the change so it holds.",
+    "steps": [
+      {
+        "title": "Diagnose",
+        "body": "We start with your data (scan, promotional history, customer P&Ls) and conversations with the people closest to the trade. Within weeks the biggest opportunities are obvious, and they are rarely the ones people expected."
+      },
+      {
+        "title": "Decide",
+        "body": "You get genuine options with the financials attached: what each one is worth, what it risks, and how the retailer is likely to respond. We make a recommendation and stand behind it."
+      },
+      {
+        "title": "Embed",
+        "body": "Strategy dies in slide decks. We help build the tools, the selling story and the review rhythm so your team keeps making better calls after the engagement ends."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Northform",
+    "heading": "Why FMCG teams choose us",
+    "intro": "We are not a global consultancy parachuting in with a template. The experience behind Northform was built inside New Zealand FMCG commercial roles, carrying the number.",
+    "pillars": [
+      {
+        "title": "Deep New Zealand expertise",
+        "body": "Twenty-plus years spent in FMCG commercial roles rather than advising on them from a distance. That covers retailer strategy, shopper behaviour, and what survives contact with execution in this market specifically."
+      },
+      {
+        "title": "Specific, quantified opportunities",
+        "body": "We don’t talk about optimisation in the abstract. Every opportunity we surface comes with a number attached and the working behind it, so you know what success looks like before you commit to it."
+      },
+      {
+        "title": "Grounded in your data",
+        "body": "Every recommendation comes out of your scan data, your promotional history and your customer economics. Frameworks are useful for structuring the question. Your numbers answer it."
+      },
+      {
+        "title": "Built for what you can execute",
+        "body": "We have held the P&L and sat in the customer meetings. Advice is built for what you can get agreed, resourced and executed, rather than for what looks clean on a slide."
+      }
+    ]
+  },
+  "insights": {
+    "eyebrow": "Insights",
+    "heading": "Notes from the trade",
+    "intro": "Practical pieces on the decisions that move margin, written for the people who have to make them."
+  },
+  "start": {
+    "eyebrow": "Start here",
+    "heading": "Not sure where the margin opportunity sits? That’s a normal place to start.",
+    "body": "Most engagements begin with a short, no-cost conversation about what’s happening in your numbers. If we don’t think we can move them, we’ll say so.",
+    "cta": "Schedule an assessment"
+  }
+}

@@ -2,7 +2,18 @@
   command = "npm run build"
   publish = "_site"
 
+[build.environment]
+  NODE_VERSION = "20"
+
+# Keeps /admin working once the Decap CMS panel is dropped in.
 [[redirects]]
   from = "/admin"
   to = "/admin/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

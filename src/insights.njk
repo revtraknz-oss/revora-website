@@ -1,56 +1,48 @@
 ---
 layout: layouts/base.njk
-title: "Insights"
-description: "Practical thinking on FMCG pricing, promotions, portfolio and trade strategy from the Revora team, written for the New Zealand market."
+title: Insights
+description: "Practical notes on the commercial decisions that move margin for New Zealand FMCG suppliers: pricing, trade investment, portfolio mix and customer terms."
 permalink: /insights/
-darkHeader: true
 ---
 
-<section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow eyebrow--dark">Insights</span>
-    <h1>Notes from the trade</h1>
-    <p class="lede">Practical thinking on pricing, promotions, portfolio and trade &mdash; written from the New Zealand market, for the people who work in it. No gated PDFs, no fluff.</p>
-  </div>
+<section class="shell hero">
+  <p class="eyebrow">Insights</p>
+  <h1 class="display" style="margin-top:26px; max-width:16ch;">Notes from the trade.</h1>
+  <p class="lede hero__lede">Practical pieces on the decisions that move margin, written for the people who have to make them.</p>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="post-list">
-      {% for post in collections.insights %}
-      <article class="insight-card reveal">
-        <a class="insight-media" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+<section class="section" style="padding-top:0;">
+  <div class="shell">
+    <div class="posts" style="margin-top:0;">
+      {% for post in collections.posts | reverse %}
+      <a class="post-row{% if post.data.image %} post-row--media{% endif %}" href="{{ post.url }}">
+        <div class="post-row__meta">
           {% if post.data.image %}
-          <img src="{{ post.data.image }}" alt="" loading="lazy">
-          {% else %}
-          <div class="pattern-fill">
-            <svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8"  y="40" width="16" height="26" fill="rgba(255,255,255,0.25)"/>
-              <rect x="32" y="28" width="16" height="38" fill="rgba(255,255,255,0.25)"/>
-              <rect x="56" y="46" width="16" height="10" fill="rgba(255,255,255,0.35)"/>
-              <rect x="80" y="12" width="16" height="54" fill="#4FA57F"/>
-            </svg>
-          </div>
+          <img class="post-row__thumb" src="{{ post.data.image }}" alt="" width="150" height="96" loading="lazy">
           {% endif %}
-        </a>
-        <div class="insight-body">
-          <span class="insight-tag">{{ post.data.category }}</span>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <p>{{ post.data.excerpt }}</p>
-          <span class="insight-date">{{ post.date | readableDate }}</span>
+          <b>{{ post.data.category }}</b>
+          <time datetime="{{ post.data.date | isoDate }}">{{ post.data.date | displayDate }}</time>
         </div>
-      </article>
+        <div>
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.excerpt }}</p>
+        </div>
+        <span class="post-row__arrow" aria-hidden="true">&rarr;</span>
+      </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="wrap">
-    <div class="cta-inner">
-      <h2>Reading about the problem is one thing. Fixing it is more fun.</h2>
-      <p>If something here sounds like your business, that's usually a good sign it's worth a conversation.</p>
-      <a class="btn btn--primary" href="/contact/">Talk to us</a>
+<section class="section section--top" style="padding-top:var(--section);">
+  <div class="shell">
+    <div class="starthere">
+      <p class="eyebrow eyebrow--pine">Start here</p>
+      <h2 class="h2" style="margin-top:18px;">Not sure where the margin opportunity sits? That&rsquo;s a normal place to start.</h2>
+      <p>Most engagements begin with a short, no-cost conversation about what&rsquo;s happening in your numbers.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/contact/">Schedule an assessment</a>
+      </div>
     </div>
   </div>
 </section>

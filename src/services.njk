@@ -1,123 +1,69 @@
 ---
 layout: layouts/base.njk
-title: "What we do"
-description: "Revora's four practice areas: strategic pricing and price pack architecture, promotion and investment optimisation, portfolio and mix management, and trade architecture and terms."
+title: What we do
+description: "Northform's four practice areas for New Zealand FMCG suppliers: pricing strategy, trade investment, portfolio and mix management, and trade terms."
 permalink: /services/
-darkHeader: true
 ---
 
-<section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow eyebrow--dark">What we do</span>
-    <h1>Four practice areas, chosen because they move the P&amp;L</h1>
-    <p class="lede">Pricing, promotions, portfolio and trade terms sit behind most of the margin in an FMCG business. We work on those four, in depth, and nothing else. Here's what each one looks like in practice.</p>
-  </div>
+<section class="shell hero">
+  <p class="eyebrow">{{ services.eyebrow }}</p>
+  <h1 class="display" style="margin-top:26px; max-width:19ch;">{{ services.headline }}</h1>
+  <p class="lede hero__lede">{{ services.lede }}</p>
 </section>
 
-<div class="wrap">
-
-  <section class="practice" id="pricing">
-    <div class="practice-head reveal">
-      <span class="eyebrow">Practice 01</span>
-      <h2>Strategic Pricing &amp; Price Pack Architecture</h2>
-      <p>Pricing is the fastest lever in the business and the easiest to get wrong. We help you set list prices, price ladders and pack architecture that recover cost, respect what shoppers will actually pay, and hold together across channels and retailers.</p>
+<div class="shell">
+  {% for p in services.practices %}
+  <section class="practice-full" id="{{ p.anchor }}">
+    <div class="practice-full__head">
+      <p class="eyebrow">{{ "0" + (loop.index | string) }} &middot; {{ p.label }}</p>
+      <h2 class="h2">{{ p.heading }}</h2>
+      <p class="practice-full__intro">{{ p.intro }}</p>
+      <div class="practice__prize">
+        <b class="figure">{{ p.figure }}</b>
+        <span>{{ p.figure_caption }}</span>
+      </div>
     </div>
-    <div class="practice-detail reveal">
-      <h3>Questions we help answer</h3>
-      <ul>
-        <li>How much of this cost increase can we recover, and in what sequence across customers?</li>
-        <li>Where should each pack sit on the shelf price ladder &mdash; and are we cannibalising ourselves?</li>
-        <li>What will a price move do to volume? What has it done before?</li>
-        <li>Is there a pack-price play (size change, new entry price point, premium tier) that beats a straight increase?</li>
+
+    <div class="practice-full__detail">
+      <h3 class="detail-label">Questions we help answer</h3>
+      <ul class="qlist">
+        {% for q in p.questions %}
+        <li>{{ q }}</li>
+        {% endfor %}
       </ul>
       <div class="outcome">
-        <strong>What you walk away with:</strong> a priced-up set of options with volume and margin impacts, a recommended architecture by channel, and a selling story your account managers can take into the buyer conversation.
+        <span class="detail-label">What you walk away with</span>
+        <p>{{ p.outcome }}</p>
       </div>
     </div>
   </section>
-
-  <section class="practice" id="promotions">
-    <div class="practice-head reveal">
-      <span class="eyebrow">Practice 02</span>
-      <h2>Promotion &amp; Investment Optimisation</h2>
-      <p>In most NZ grocery categories, a large share of volume moves on deal &mdash; which makes promotional spend one of your biggest investments and, too often, one of the least examined. We measure what your promotions really return and rebuild the plan around the ones that earn their keep.</p>
-    </div>
-    <div class="practice-detail reveal">
-      <h3>Questions we help answer</h3>
-      <ul>
-        <li>Which promotional events genuinely grow the business, and which just move next month's volume forward at a discount?</li>
-        <li>Are we on the right depth and frequency &mdash; or have we trained shoppers to wait for the deal?</li>
-        <li>What's the true ROI of each event once funding, margin give and baseline erosion are counted?</li>
-        <li>How should next year's promo calendar and co-op investment change as a result?</li>
-      </ul>
-      <div class="outcome">
-        <strong>What you walk away with:</strong> an event-by-event effectiveness read, a reshaped promotional plan with the financial case for each change, and a simple framework your team can use to evaluate every future proposal.
-      </div>
-    </div>
-  </section>
-
-  <section class="practice" id="portfolio">
-    <div class="practice-head reveal">
-      <span class="eyebrow">Practice 03</span>
-      <h2>Portfolio &amp; Mix Management</h2>
-      <p>Ranges drift. SKUs accumulate, tail lines quietly absorb cost, and mix shifts in ways nobody chose. We bring discipline back: a clear role for every product, an honest view of what each line earns, and a portfolio shaped to grow margin rather than just revenue.</p>
-    </div>
-    <div class="practice-detail reveal">
-      <h3>Questions we help answer</h3>
-      <ul>
-        <li>Which SKUs are genuinely profitable once trade spend and cost-to-serve are loaded in?</li>
-        <li>What role does each line play &mdash; traffic, margin, defence &mdash; and does the range hold up without the passengers?</li>
-        <li>Where is mix quietly eroding (or building) our margin, and what's driving it?</li>
-        <li>How do we walk into the next range review with a proposal instead of a defence?</li>
-      </ul>
-      <div class="outcome">
-        <strong>What you walk away with:</strong> a portfolio map with a recommended role and action for every SKU, the margin case behind each call, and a range story built for the retailer's category agenda as well as your own.
-      </div>
-    </div>
-  </section>
-
-  <section class="practice" id="trade">
-    <div class="practice-head reveal">
-      <span class="eyebrow">Practice 04</span>
-      <h2>Trade Architecture &amp; Terms</h2>
-      <p>Terms structures tend to be inherited, negotiated under pressure, and rarely revisited. We help you redesign customer investment so it rewards the behaviour you actually want &mdash; growth, compliance, efficiency &mdash; and gives you a defensible position when the negotiation gets hard.</p>
-    </div>
-    <div class="practice-detail reveal">
-      <h3>Questions we help answer</h3>
-      <ul>
-        <li>What are we really paying each customer for, and would we agree to it again today?</li>
-        <li>How much of our investment is unconditional versus tied to performance &mdash; and what should that split be?</li>
-        <li>Are terms consistent enough across customers to survive scrutiny, and flexible enough to reward genuine partners?</li>
-        <li>What's our walk-in position, our fallback and our red lines for the next terms negotiation?</li>
-      </ul>
-      <div class="outcome">
-        <strong>What you walk away with:</strong> a full read of your current investment by customer and mechanism, a redesigned terms architecture with the transition path, and preparation support for the negotiations that follow.
-      </div>
-    </div>
-  </section>
-
+  {% endfor %}
 </div>
 
-<section class="section section--paper2 section--tight">
-  <div class="wrap">
-    <div class="statement reveal">
+<section class="section section--sunk section--top">
+  <div class="shell">
+    <div class="sec-head">
       <div>
-        <span class="eyebrow">Underneath it all</span>
-        <h2>Analytics and execution come standard</h2>
+        <p class="eyebrow">{{ services.closing.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ services.closing.heading }}</h2>
       </div>
-      <div class="statement-side">
-        <p>We don't sell analytics or implementation as separate line items, because they're not optional. Every engagement is grounded in your scan data, promotional history and customer economics, and every recommendation comes with the tools and selling story needed to land it in-market. That's just what doing the job properly looks like.</p>
+      <div class="sec-head__side">
+        <p>{{ services.closing.body }}</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="wrap">
-    <div class="cta-inner">
-      <h2>Start with whichever question is costing you the most sleep</h2>
-      <p>Engagements usually begin with one sharp problem, not a grand program. Tell us what's in front of you and we'll tell you honestly whether we can help.</p>
-      <a class="btn btn--primary" href="/contact/">Book a conversation</a>
+<section class="section section--top">
+  <div class="shell">
+    <div class="starthere">
+      <p class="eyebrow eyebrow--pine">Start here</p>
+      <h2 class="h2" style="margin-top:18px;">{{ services.start.heading }}</h2>
+      <p>{{ services.start.body }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/contact/">Schedule an assessment</a>
+        <a class="btn btn--ghost" href="tel:{{ site.phoneLink }}">{{ site.phone }}</a>
+      </div>
     </div>
   </div>
 </section>

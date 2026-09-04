@@ -1,0 +1,13 @@
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="/">Northform</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/services/"{% if page.url == '/services/' %} aria-current="page"{% endif %}>What we do</a>
+      <a href="/#how">How we work</a>
+      <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a href="/insights/"{% if '/insights/' in page.url %} aria-current="page"{% endif %}>Insights</a>
+      <a href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a>
+      <a class="nav__phone" href="tel:{{ site.phoneLink }}">{{ site.phone }}</a>
+    </nav>
+  </div>
+</header>

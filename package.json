@@ -1,16 +1,14 @@
 {
-  "name": "revora-website",
+  "name": "northform",
   "version": "1.0.0",
-  "description": "Revora FMCG Advisory website",
-  "main": "index.js",
+  "private": true,
+  "description": "Northform RGM Advisory — northform.co.nz",
   "scripts": {
+    "dev": "eleventy --serve",
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.0.0"
   }
 }
