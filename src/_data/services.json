@@ -1,0 +1,79 @@
+{
+  "eyebrow": "What we do",
+  "headline": "Four practice areas, chosen because they move the P&L.",
+  "lede": "Pricing, trade investment, portfolio and customer terms sit behind most of the margin in an FMCG business. We work on those four, in depth, and nothing else. Here is what each one looks like in practice.",
+
+  "practices": [
+    {
+      "anchor": "pricing",
+      "label": "Pricing",
+      "heading": "Recover margin through smarter pricing",
+      "figure": "2–4%",
+      "figure_caption": "Gross margin · typical range",
+      "intro": "Pricing is the fastest lever in the business and the easiest to get wrong. We help you set list prices, price ladders and pack architecture that recover cost, respect what shoppers will actually pay, and hold together across channels and retailers.",
+      "questions": [
+        "How much of this cost increase can we recover, and in what sequence across customers?",
+        "Where should each pack sit on the shelf price ladder, and are we cannibalising ourselves?",
+        "What will a price move do to volume? What has it done before?",
+        "Is there a pack-price play (size change, new entry price point, premium tier) that beats a straight increase?"
+      ],
+      "outcome": "A priced-up set of options with volume and margin impacts, a recommended architecture by channel, and a selling story your account managers can take into the buyer conversation."
+    },
+    {
+      "anchor": "trade-investment",
+      "label": "Trade investment",
+      "heading": "Stop wasting trade investment",
+      "figure": "15–25%",
+      "figure_caption": "Promotional ROI · typical range",
+      "intro": "In most New Zealand grocery categories a large share of volume moves on deal, which makes promotional spend one of your biggest investments and, too often, one of the least examined. We measure what your promotions really return and rebuild the plan around the ones that earn their keep.",
+      "questions": [
+        "Which promotional events genuinely grow the business, and which just move next month's volume forward at a discount?",
+        "Are we on the right depth and frequency, or have we trained shoppers to wait for the deal?",
+        "What is the true ROI of each event once funding, margin give and baseline erosion are counted?",
+        "How should next year's promotional calendar and co-op investment change as a result?"
+      ],
+      "outcome": "An event-by-event effectiveness read, a reshaped promotional plan with the financial case for each change, and a simple framework your team can use to evaluate every future proposal."
+    },
+    {
+      "anchor": "portfolio",
+      "label": "Portfolio & mix",
+      "heading": "Make your range work for margin",
+      "figure": "1–3%",
+      "figure_caption": "Bottom line · typical range",
+      "intro": "Ranges drift. SKUs accumulate, tail lines absorb cost, and mix shifts in ways nobody chose. We bring the discipline back: a clear role for every product, an honest view of what each line earns, and a portfolio shaped to grow margin rather than just revenue.",
+      "questions": [
+        "Which SKUs are genuinely profitable once trade spend and cost-to-serve are loaded in?",
+        "What role does each line play, and does the range hold up without the passengers?",
+        "Where is mix eroding or building our margin, and what is driving it?",
+        "How do we walk into the next range review with a proposal instead of a defence?"
+      ],
+      "outcome": "A portfolio map with a recommended role and action for every SKU, the margin case behind each call, and a range story built for the retailer's category agenda as well as your own."
+    },
+    {
+      "anchor": "trade-terms",
+      "label": "Trade terms",
+      "heading": "Build trade terms you can defend",
+      "figure": "Customer P&L",
+      "figure_caption": "Clarity by customer",
+      "intro": "Terms structures tend to be inherited, negotiated under pressure and rarely revisited. We help you redesign customer investment so it rewards the behaviour you actually want, and gives you a defensible position when the negotiation gets hard.",
+      "questions": [
+        "What are we really paying each customer for, and would we agree to it again today?",
+        "How much of our investment is unconditional versus tied to performance, and what should that split be?",
+        "Are terms consistent enough across customers to survive scrutiny, and flexible enough to reward genuine partners?",
+        "What is our walk-in position, our fallback and our red lines for the next terms negotiation?"
+      ],
+      "outcome": "A full read of your current investment by customer and mechanism, a redesigned terms architecture with the transition path, and preparation support for the negotiations that follow."
+    }
+  ],
+
+  "closing": {
+    "eyebrow": "Underneath it all",
+    "heading": "Analytics and execution come standard",
+    "body": "We don't sell analytics or implementation as separate line items, because they are not optional. Every engagement is grounded in your scan data, promotional history and customer economics, and every recommendation comes with the tools and selling story needed to land it in market. That is what doing the job properly looks like."
+  },
+
+  "start": {
+    "heading": "Start with whichever question is costing you the most sleep.",
+    "body": "Engagements usually begin with one sharp problem rather than a grand programme. Tell us what is in front of you and we will tell you honestly whether we can help."
+  }
+}

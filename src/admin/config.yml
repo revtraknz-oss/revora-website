@@ -5,27 +5,220 @@ backend:
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
-site_url: /
-display_url: /
+publish_mode: simple
+site_url: https://northform.co.nz
+display_url: https://northform.co.nz
 logo_url: /assets/favicon.svg
 
 collections:
+  # ------------------------------------------------------------------ blog
   - name: "insights"
-    label: "Insights (Blog)"
+    label: "Insights (blog posts)"
     label_singular: "Insight"
+    description: "Blog posts. These appear on the Insights page and the three most recent show on the homepage."
     folder: "src/posts"
     create: true
-    delete: true
     slug: "{{slug}}"
-    summary: "{{title}} — {{date | date('DD MMM YYYY')}}"
+    summary: "{{title}}"
     sortable_fields: ["date", "title"]
     fields:
-      - { label: "Title", name: "title", widget: "string", hint: "The headline shown on the site." }
-      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD MMM YYYY", time_format: false }
-      - label: "Category"
-        name: "category"
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date published", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - name: "category"
+        label: "Category"
         widget: "select"
-        options: ["Pricing", "Promotions & Trade", "Portfolio", "Trade Terms", "Commercial Capability"]
-      - { label: "Summary", name: "excerpt", widget: "text", hint: "One or two sentences shown on the Insights page and homepage cards." }
-      - { label: "Header image", name: "image", widget: "image", required: false, hint: "Optional. Shown on the article card. If left empty, a branded graphic is used instead." }
-      - { label: "Body", name: "body", widget: "markdown", hint: "The article itself. Use Heading 2 for section headings." }
+        options: ["Pricing", "Trade Investment", "Portfolio & Mix", "Trade Terms", "Market Context"]
+      - { name: "excerpt", label: "Excerpt", widget: "text", hint: "One or two sentences. Shown on the Insights list and the homepage." }
+      - { name: "image", label: "Header image", widget: "image", required: false, hint: "Optional. Shown on the Insights list. Leave blank for a text-only card." }
+      - { name: "description", label: "Search description", widget: "text", required: false, hint: "Used by Google. Leave blank to reuse the excerpt." }
+      - { name: "body", label: "Post", widget: "markdown" }
+
+  # -------------------------------------------------------------- homepage
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "home"
+        label: "Homepage content"
+        file: "src/_data/home.json"
+        fields:
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label above headline", widget: "string" }
+              - { name: "headline", label: "Headline", widget: "string", hint: "The first number in this sentence is automatically emphasised." }
+              - { name: "lede", label: "Opening paragraph", widget: "text" }
+              - { name: "note", label: "Small note under the buttons", widget: "text" }
+
+          - name: "credentials"
+            label: "Credibility band (three items)"
+            widget: "list"
+            fields:
+              - { name: "figure", label: "Figure", widget: "string" }
+              - { name: "caption", label: "Caption", widget: "text" }
+
+          - name: "context"
+            label: "Section: the margin squeeze"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+              - name: "pressures"
+                label: "Pressures"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+              - { name: "closing", label: "Closing paragraph", widget: "text" }
+
+          - name: "practices"
+            label: "Section: where we find margin"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+              - name: "items"
+                label: "Practice areas"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - { name: "label", label: "Short label", widget: "string" }
+                  - { name: "heading", label: "Heading", widget: "string" }
+                  - { name: "figure", label: "Figure", widget: "string" }
+                  - { name: "figure_caption", label: "Figure caption", widget: "string" }
+                  - { name: "problem", label: "The problem", widget: "text" }
+                  - { name: "method", label: "What we do", widget: "text" }
+              - name: "disclaimer"
+                label: "Disclaimer about the ranges"
+                widget: "text"
+                hint: "Keep this. It frames the percentages as industry-typical rather than a guaranteed result."
+
+          - name: "how"
+            label: "Section: how we work"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+              - name: "steps"
+                label: "Steps"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+
+          - name: "why"
+            label: "Section: why Northform"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+              - name: "pillars"
+                label: "Reasons"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Body", widget: "text" }
+
+          - name: "insights"
+            label: "Section: insights heading"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+
+          - name: "start"
+            label: "Section: start here"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+              - { name: "cta", label: "Button text", widget: "string" }
+
+  # ----------------------------------------------------------- about page
+  - name: "about_page"
+    label: "About page"
+    files:
+      - name: "about"
+        label: "About page content"
+        file: "src/_data/about.json"
+        fields:
+          - { name: "eyebrow", label: "Small label", widget: "string" }
+          - { name: "headline", label: "Headline", widget: "string" }
+          - { name: "lede", label: "Opening paragraph", widget: "text" }
+          - name: "credentials"
+            label: "Credibility band (three items)"
+            widget: "list"
+            fields:
+              - { name: "figure", label: "Figure", widget: "string" }
+              - { name: "caption", label: "Caption", widget: "text" }
+          - { name: "body", label: "Main text", widget: "markdown" }
+          - name: "start"
+            label: "Start here block"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+
+  # ------------------------------------------------------ contact details
+  - name: "settings"
+    label: "Contact details"
+    files:
+      - name: "site"
+        label: "Phone, email and business name"
+        file: "src/_data/site.json"
+        fields:
+          - { name: "name", label: "Short name", widget: "string" }
+          - { name: "fullName", label: "Full business name", widget: "string" }
+          - { name: "tagline", label: "Tagline", widget: "string" }
+          - { name: "region", label: "Region", widget: "string" }
+          - { name: "url", label: "Website address", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "phone", label: "Phone (as displayed)", widget: "string", hint: "For example: 022 183 5377" }
+          - { name: "phoneLink", label: "Phone (dialling format)", widget: "string", hint: "For example: +64221835377. This is what the tap-to-call link uses." }
+          - { name: "year", label: "Copyright year", widget: "number", value_type: "int" }
+
+  # ---------------------------------------------------------- services page
+  - name: "services_page"
+    label: "What we do page"
+    files:
+      - name: "services"
+        label: "What we do"
+        file: "src/_data/services.json"
+        fields:
+          - { name: "eyebrow", label: "Small label", widget: "string" }
+          - { name: "headline", label: "Headline", widget: "string" }
+          - { name: "lede", label: "Opening paragraph", widget: "text" }
+          - name: "practices"
+            label: "Practice areas"
+            widget: "list"
+            summary: "{{fields.heading}}"
+            fields:
+              - { name: "anchor", label: "Link anchor", widget: "string", hint: "Used in the page address. Changing this breaks existing links." }
+              - { name: "label", label: "Short label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "figure", label: "Figure", widget: "string" }
+              - { name: "figure_caption", label: "Figure caption", widget: "string" }
+              - { name: "intro", label: "Intro paragraph", widget: "text" }
+              - { name: "questions", label: "Questions we help answer", widget: "list", field: { name: "question", label: "Question", widget: "string" } }
+              - { name: "outcome", label: "What you walk away with", widget: "text" }
+          - name: "closing"
+            label: "Closing section"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Small label", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }
+          - name: "start"
+            label: "Start here block"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "body", label: "Body", widget: "text" }

@@ -1,38 +1,55 @@
 ---
 title: "Your range review is a margin decision in disguise"
-date: 2026-04-14
-category: "Portfolio"
-excerpt: "Most suppliers walk into range reviews playing defence — trying not to lose facings. The better question is what you'd actually want your range to look like if you chose it on purpose."
-image: "/assets/img/checkout.jpg"
+date: 2026-06-30
+category: Portfolio & Mix
+excerpt: "Most suppliers walk into a range review trying not to lose facings. That turns a margin decision into a shelf-space negotiation, and hands the agenda to the retailer."
+image: "/assets/img/checkout-crop.jpg"
+description: "Why FMCG range reviews should be argued on margin contribution rather than facings, and how to build the position before the meeting."
 ---
 
-Range review season has a particular feeling. The email arrives, the deadline is tight, and the commercial team drops everything to defend the range — every SKU, every facing, as if losing any of it would be a failure.
+The range review arrives on the calendar and the objective sets itself. Hold the listings. Defend the facings. Don't come out of the room with less than you went in with.
 
-Here's an uncomfortable question worth asking before the next one: if you were building your range from scratch today, would you choose the one you have?
+It is an understandable instinct and a costly frame. A range review is one of the few moments in the year when the shape of your portfolio is genuinely up for negotiation, which makes it a margin decision. Defending the status quo is only the right answer if the status quo is optimal.
 
-For most suppliers the honest answer is no. Ranges accumulate rather than get designed. A flavour extension from 2019 that never found its audience. A pack size added for a promotion that ended years ago. Lines kept because a particular buyer once liked them. Each individual decision made sense at the time; the sum of them is a range where a surprising share of SKUs contribute complexity, cost and very little else.
+It usually isn't.
 
-## The tail costs more than it looks
+## What the defensive frame costs you
 
-On the surface, a slow-moving SKU seems almost free to keep. It sells a little, it holds a facing, why not?
+When the goal is holding facings, three things follow.
 
-Load in the real costs and the picture changes. Short production runs. Working capital tied up in slow stock. Higher waste and markdowns. The trade spend it takes to keep a weak line on shelf. The management attention it absorbs at exactly moments like range reviews. Genuinely profitable tail SKUs exist — but they're rarer than most portfolio reports suggest, because most portfolio reports stop at gross margin.
+You argue on the retailer's terms. Category size, rate of sale and share of shelf are their metrics, and they are metrics about volume. Nothing in that conversation asks what each line contributes to your margin.
 
-There's a competitive cost too. Every facing a passenger SKU occupies is a facing your strongest lines don't get, and shelf space handed to a weak line is space a competitor will happily target.
+You defend your weakest lines hardest. The SKUs most at risk are usually the slow movers, and the slow movers are often the ones you would drop yourself if the decision were entirely yours. Energy goes into keeping the things you should be arguing to replace.
 
-## Give every SKU a job
+And you arrive without a proposal. If your only position is no changes, the retailer's plan is the only plan in the room.
 
-The discipline that changes range reviews is simple to describe: every SKU in the portfolio gets an explicit role and an action attached to it.
+## The analysis to run first
 
-- **Grow** — the lines you'd back with investment, innovation and your best shelf argument.
-- **Hold** — solid earners that need protection, not investment.
-- **Fund** — lines you'll manage for cash to pay for growth elsewhere.
-- **Exit** — lines you'll trade away, on your terms, for something you want.
+The alternative is to walk in with a view on what the range should be, argued on value. That means knowing where value is actually created in your portfolio, which is a different question from where volume is.
 
-That last category is where range reviews flip from defence to offence. Walking in with SKUs you're prepared to give up — in exchange for distribution on a priority line, better positioning, or support for a launch — puts you in a completely different negotiation than clinging to everything. Retailers make ranging decisions on category economics, and a supplier who arrives speaking that language, with a proposal that makes the category better, tends to be treated as a partner rather than a problem.
+For each SKU, you want:
 
-## Do the work before the email arrives
+- Margin contribution rather than revenue, calculated after trade investment.
+- Rate of sale against space consumed, so the comparison is like for like.
+- Incrementality. Does this line bring volume the rest of the range wouldn't otherwise get, or does it split demand with the SKU beside it?
+- Role. Some lines exist to anchor price perception, some to hold a shelf position, some to earn. A line doing its job badly is a different problem from a line with no job at all.
 
-The suppliers who do well out of range reviews aren't the ones who write the best defence documents under deadline. They're the ones who did the portfolio work months earlier, know exactly what each line earns and what job it does, and turn up with a story about where the category is going.
+The output is a ranking, and the ranking usually contains at least one uncomfortable finding: a long-standing SKU that consumes space, splits demand with a better line, and contributes very little once trade spend is allocated properly.
 
-The review email is going to arrive either way. The only question is whether it starts a scramble or executes a plan.
+## Turning the analysis into a position
+
+The productive version of a range review is a trade. You propose delisting the lines that don't earn their space, and use the freed facings for the ones that do, or for a new line you want listed.
+
+This works because it gives the retailer something they want. They are also trying to improve the productivity of the space. They simply have no visibility of your margin structure, so they optimise on category metrics instead. A proposal that improves rate of sale per facing is one they can accept.
+
+It also changes what happens when they push back. If they want to delist a SKU you have identified as strategically important, you have the evidence to argue for that one specifically, instead of spending credibility defending everything equally.
+
+## The one to three percent
+
+Portfolio and mix work rarely produces a single dramatic number. It produces a series of small, deliberate decisions about which lines go, which packs get the facing, and which channels get an exclusive format. Over a year they compound into a bottom-line improvement.
+
+That is the part worth planning for. The range review is where those decisions get made whether or not you have prepared for it.
+
+---
+
+*Northform works with New Zealand FMCG suppliers on portfolio and mix analysis ahead of range reviews. [Schedule an assessment](/contact/).*

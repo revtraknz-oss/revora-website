@@ -1,196 +1,195 @@
 ---
 layout: layouts/base.njk
-title: "Pricing, Trade & Portfolio Strategy for NZ FMCG"
-description: "Revora is a specialist commercial advisory for New Zealand FMCG suppliers. Sharper pricing, promotion, portfolio and trade decisions, grounded in your numbers."
-darkHeader: true
+description: "Northform RGM Advisory helps New Zealand FMCG suppliers find the margin sitting inside their pricing, trade investment, portfolio mix and customer terms, then build the discipline that keeps it there."
 ---
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow eyebrow--dark">Specialist FMCG Advisory &middot; New Zealand</span>
-      <h1>Margin is decided in a handful of moments. <span class="em-word">Get them right.</span></h1>
-      <p class="lede">A list price move. A promo slot. A range review. A terms negotiation. Revora works alongside New Zealand FMCG suppliers on the commercial decisions that actually shift the trading result &mdash; and helps your team make them with confidence.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="/contact/">Book a conversation</a>
-        <a class="btn btn--ghost" href="/services/">See what we do</a>
-      </div>
-      <p class="hero-note">Independent. No software to buy, no retainer required to start.</p>
+<section class="shell hero hero--split">
+  <div class="hero__copy">
+    <p class="eyebrow">{{ home.hero.eyebrow }}</p>
+    <h1 class="display" style="margin-top:26px;">{{ home.hero.headline | highlightFigure | safe }}</h1>
+    <p class="lede hero__lede">{{ home.hero.lede }}</p>
+    <div class="btn-row hero__actions">
+      <a class="btn btn--primary" href="/contact/">Schedule an assessment</a>
+      <a class="btn btn--ghost" href="/services/">See where we find margin</a>
     </div>
-    <figure class="bridge-figure" aria-hidden="true">
-      <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative revenue bridge chart">
-        <!-- baseline gridlines -->
-        <line x1="20" y1="250" x2="420" y2="250" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-        <line x1="20" y1="190" x2="420" y2="190" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-        <line x1="20" y1="130" x2="420" y2="130" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-        <line x1="20" y1="70"  x2="420" y2="70"  stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-        <!-- bridge bars: base, price, mix, promo drag, result -->
-        <rect x="30"  y="130" width="58" height="120" fill="rgba(255,255,255,0.22)"/>
-        <rect x="108" y="96"  width="58" height="34"  fill="rgba(79,165,127,0.75)"/>
-        <rect x="186" y="72"  width="58" height="24"  fill="rgba(79,165,127,0.75)"/>
-        <rect x="264" y="72"  width="58" height="36"  fill="rgba(214,116,86,0.7)"/>
-        <rect x="342" y="108" width="58" height="142" fill="#4FA57F"/>
-        <!-- connectors -->
-        <line x1="88"  y1="130" x2="108" y2="130" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
-        <line x1="166" y1="96"  x2="186" y2="96"  stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
-        <line x1="244" y1="72"  x2="264" y2="72"  stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
-        <line x1="322" y1="108" x2="342" y2="108" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
-        <!-- labels -->
-        <g fill="rgba(255,255,255,0.5)" font-family="Public Sans, sans-serif" font-size="11" text-anchor="middle">
-          <text x="59"  y="272">Base</text>
-          <text x="137" y="272">Price</text>
-          <text x="215" y="272">Mix</text>
-          <text x="293" y="272">Promo</text>
-          <text x="371" y="272" fill="#4FA57F" font-weight="700">Result</text>
-        </g>
-      </svg>
-      <figcaption class="bridge-caption">Revenue bridge &mdash; where the year is won</figcaption>
-    </figure>
+    <p class="hero__note">{{ home.hero.note }}</p>
   </div>
+  {% if home.hero.image %}
+  <figure class="hero__figure">
+    <img src="{{ home.hero.image }}" alt="{{ home.hero.image_alt }}" width="900" height="1200" fetchpriority="high">
+  </figure>
+  {% endif %}
 </section>
 
-<div class="stat-strip">
-  <div class="wrap stat-grid">
-    <div class="stat">
-      <div class="stat-value">20+ years</div>
-      <div class="stat-label">in FMCG commercial roles, not just advising on them</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">$250M+</div>
-      <div class="stat-label">of revenue managed across pricing, promotions and trade</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">NZ grocery</div>
-      <div class="stat-label">is our home ground &mdash; the retailers, the shoppers, the pressure</div>
-    </div>
+<div class="creds">
+  {% for c in home.credentials %}
+  <div>
+    <b class="figure">{{ c.figure }}</b>
+    <span>{{ c.caption }}</span>
   </div>
+  {% endfor %}
 </div>
 
-<section class="section">
-  <div class="wrap">
-    <div class="statement reveal">
+<!-- ============================= MARGIN SQUEEZE ============================= -->
+<section class="section" id="context">
+  <div class="shell">
+    <div class="sec-head">
       <div>
-        <span class="eyebrow">Why Revora</span>
-        <h2>Deep on the commercial questions. Deliberately narrow on everything else.</h2>
+        <p class="eyebrow">{{ home.context.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ home.context.heading }}</h2>
       </div>
-      <div class="statement-side">
-        <p>Most consultancies will take on whatever brief walks in the door. We won't. Revora works on four things: pricing, promotional investment, portfolio and trade terms. That's it &mdash; because those four areas decide most of the margin in an FMCG business, and because doing them well takes people who have actually held the P&amp;L.</p>
-        <p>Our recommendations come from your scan data, your promo history and your customer economics, not from a template. And we stay close enough to make sure the decision holds up in the buyer's office, not just in the boardroom.</p>
+      <div class="sec-head__side">
+        <p>{{ home.context.intro }}</p>
       </div>
     </div>
+
+    <div class="pressures">
+      {% for p in home.context.pressures %}
+      <div>
+        <p class="eyebrow">Pressure {{ "0" + (loop.index | string) }}</p>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="caveat" style="margin-top:40px;">{{ home.context.closing }}</p>
   </div>
 </section>
 
-<section class="section section--paper2">
-  <div class="wrap">
-    <div class="section-head section-head--split">
+<!-- ============================== PRACTICES =============================== -->
+<section class="section section--sunk section--top" id="practices">
+  <div class="shell">
+    <div class="sec-head">
       <div>
-        <span class="eyebrow">What we do</span>
-        <h2>Four practice areas. One goal: a stronger trading result.</h2>
+        <p class="eyebrow">{{ home.practices.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ home.practices.heading }}</h2>
       </div>
-      <a class="btn btn--ghost-navy" href="/services/">Explore all four</a>
+      <div class="sec-head__side">
+        <p>{{ home.practices.intro }}</p>
+      </div>
     </div>
-    <div class="service-grid">
-      <article class="service-card reveal">
-        <p class="service-kicker">Practice 01</p>
-        <h3>Strategic Pricing &amp; Price Pack Architecture</h3>
-        <p>List prices, price ladders and pack-price moves that recover cost, protect volume and hold their shape across channels &mdash; built on elasticity evidence rather than gut feel.</p>
-        <a class="card-link" href="/services/#pricing">How we approach pricing</a>
-      </article>
-      <article class="service-card reveal">
-        <p class="service-kicker">Practice 02</p>
-        <h3>Promotion &amp; Investment Optimisation</h3>
-        <p>A clear read on which promotions pay for themselves and which quietly don't &mdash; then a plan that puts your investment behind the events that genuinely grow the business.</p>
-        <a class="card-link" href="/services/#promotions">How we approach promotions</a>
-      </article>
-      <article class="service-card reveal">
-        <p class="service-kicker">Practice 03</p>
-        <h3>Portfolio &amp; Mix Management</h3>
-        <p>Every SKU given a job &mdash; grow, hold, fund or exit &mdash; so range reviews become opportunities instead of ambushes, and mix starts working for your margin rather than against it.</p>
-        <a class="card-link" href="/services/#portfolio">How we approach portfolio</a>
-      </article>
-      <article class="service-card reveal">
-        <p class="service-kicker">Practice 04</p>
-        <h3>Trade Architecture &amp; Terms</h3>
-        <p>Customer investment structures that reward the behaviour you actually want &mdash; with terms you can defend line by line when the next negotiation comes around.</p>
-        <a class="card-link" href="/services/#trade">How we approach trade terms</a>
-      </article>
-    </div>
-  </div>
-</section>
 
-<section class="section section--dark">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow eyebrow--dark">How we work</span>
-      <h2>No hundred-page decks. A decision, the numbers behind it, and help landing it.</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <span class="step-name">First &middot; Diagnose</span>
-        <h3>Find where the margin is leaking</h3>
-        <p>We start with your data &mdash; scan, promo history, customer P&amp;Ls &mdash; and conversations with the people closest to the trade. Usually within weeks, not months, the two or three biggest opportunities are obvious.</p>
-      </div>
-      <div class="step reveal">
-        <span class="step-name">Then &middot; Decide</span>
-        <h3>Put real options on the table</h3>
-        <p>You get genuine alternatives with the financials attached: what each option is worth, what it risks, and how the retailer is likely to respond. Then we make a recommendation and stand behind it.</p>
-      </div>
-      <div class="step reveal">
-        <span class="step-name">Finally &middot; Embed</span>
-        <h3>Make it stick in-market</h3>
-        <p>Strategy that dies in a slide deck was never strategy. We help build the tools, the selling story and the review rhythm so your team keeps making better calls long after we've gone.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow">Insights</span>
-        <h2>Notes from the trade</h2>
-      </div>
-      <a class="btn btn--ghost-navy" href="/insights/">All insights</a>
-    </div>
-    <div class="insight-grid">
-      {% for post in collections.insights %}
-      {% if loop.index <= 3 %}
-      <article class="insight-card reveal">
-        <a class="insight-media" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
-          {% if post.data.image %}
-          <img src="{{ post.data.image }}" alt="" loading="lazy">
-          {% else %}
-          <div class="pattern-fill">
-            <svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8"  y="40" width="16" height="26" fill="rgba(255,255,255,0.25)"/>
-              <rect x="32" y="28" width="16" height="38" fill="rgba(255,255,255,0.25)"/>
-              <rect x="56" y="46" width="16" height="10" fill="rgba(255,255,255,0.35)"/>
-              <rect x="80" y="12" width="16" height="54" fill="#4FA57F"/>
-            </svg>
-          </div>
-          {% endif %}
-        </a>
-        <div class="insight-body">
-          <span class="insight-tag">{{ post.data.category }}</span>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-          <p>{{ post.data.excerpt }}</p>
-          <span class="insight-date">{{ post.date | readableDate }}</span>
+    {% for item in home.practices.items %}
+    <div class="practice">
+      <div class="practice__label">
+        <p class="eyebrow">{{ "0" + (loop.index | string) }} &middot; {{ item.label }}</p>
+        <h3 class="h3"><a class="practice__link" href="/services/#{{ item.anchor }}">{{ item.heading }}</a></h3>
+        <div class="practice__prize">
+          <b class="figure">{{ item.figure }}</b>
+          <span>{{ item.figure_caption }}</span>
         </div>
-      </article>
-      {% endif %}
+      </div>
+      <div class="practice__body">
+        <p class="problem">{{ item.problem }}</p>
+        <p class="method">{{ item.method }}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+    <p class="caveat">{{ home.practices.disclaimer }}</p>
+  </div>
+</section>
+
+<!-- ============================== HOW WE WORK ============================== -->
+<section class="section section--top" id="how">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">{{ home.how.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ home.how.heading }}</h2>
+      </div>
+      <div class="sec-head__side">
+        <p>{{ home.how.intro }}</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      {% for s in home.how.steps %}
+      <div>
+        <span class="num figure">Step {{ "0" + (loop.index | string) }}</span>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.body }}</p>
+      </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="wrap">
-    <div class="cta-inner">
-      <h2>Not sure where the opportunity sits? That's a normal place to start.</h2>
-      <p>Most engagements begin with a short, no-cost conversation about what's happening in your numbers. If we don't think we can move them, we'll say so.</p>
-      <a class="btn btn--primary" href="/contact/">Start a conversation</a>
+<!-- ============================= WHY NORTHFORM ============================= -->
+<section class="section section--sunk section--top" id="why">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">{{ home.why.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ home.why.heading }}</h2>
+      </div>
+      <div class="sec-head__side">
+        <p>{{ home.why.intro }}</p>
+      </div>
+    </div>
+
+    <div class="pillars">
+      {% for p in home.why.pillars %}
+      <div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ================================ INSIGHTS =============================== -->
+<section class="section section--top" id="insights">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">{{ home.insights.eyebrow }}</p>
+        <h2 class="h2" style="margin-top:20px;">{{ home.insights.heading }}</h2>
+      </div>
+      <div class="sec-head__side">
+        <p>{{ home.insights.intro }}</p>
+      </div>
+    </div>
+
+    <div class="posts">
+      {% for post in collections.posts | reverse %}
+        {% if loop.index <= 3 %}
+        <a class="post-row" href="{{ post.url }}">
+          <div class="post-row__meta">
+            <b>{{ post.data.category }}</b>
+            <time datetime="{{ post.data.date | isoDate }}">{{ post.data.date | displayDate }}</time>
+          </div>
+          <div>
+            <h3>{{ post.data.title }}</h3>
+            <p>{{ post.data.excerpt }}</p>
+          </div>
+          <span class="post-row__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <p style="margin-top:32px;"><a class="textlink" href="/insights/">All insights</a></p>
+  </div>
+</section>
+
+<!-- =============================== START HERE ============================== -->
+<section class="section section--top" id="start">
+  <div class="shell">
+    <div class="starthere">
+      <p class="eyebrow eyebrow--pine">{{ home.start.eyebrow }}</p>
+      <h2 class="h2" style="margin-top:18px;">{{ home.start.heading }}</h2>
+      <p>{{ home.start.body }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/contact/">{{ home.start.cta }}</a>
+        <a class="btn btn--ghost" href="tel:{{ site.phoneLink }}">{{ site.phone }}</a>
+      </div>
+      <div class="contact-lines">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a>
+      </div>
     </div>
   </div>
 </section>

@@ -1,9 +1,11 @@
 {
-  "name": "Revora FMCG Advisory",
-  "shortName": "Revora",
-  "tagline": "Specialist commercial advisory for New Zealand FMCG",
-  "email": "hello@revora.co.nz",
-  "phone": "0275 770 662",
-  "phoneHref": "+64275770662",
-  "url": "https://revora.netlify.app"
+  "name": "Northform",
+  "fullName": "Northform RGM Advisory",
+  "tagline": "Revenue Growth Management Advisory",
+  "region": "New Zealand",
+  "url": "https://northform.co.nz",
+  "email": "hello@northform.co.nz",
+  "phone": "022 183 5377",
+  "phoneLink": "+64221835377",
+  "year": 2026
 }

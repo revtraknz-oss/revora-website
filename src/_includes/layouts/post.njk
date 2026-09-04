@@ -1,27 +1,32 @@
 ---
 layout: layouts/base.njk
-darkHeader: true
 ---
-<article class="post">
-  <header class="post-header">
-    <div class="wrap">
-      <h1>{{ title }}</h1>
-      <div class="post-meta">
-        <span class="insight-tag">{{ category }}</span>
-        <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
-        <span>Revora team</span>
+<article class="article">
+  <div class="shell shell--narrow">
+    <header class="article__head">
+      <div class="article__meta">
+        <b>{{ category }}</b>
+        <time datetime="{{ date | isoDate }}">{{ date | displayDate }}</time>
       </div>
-    </div>
-  </header>
-  <div class="post-body">
-    <a class="back-link" href="/insights/">All insights</a>
-    {{ content | safe }}
-  </div>
-  <div class="post-footer">
-    <div class="post-cta">
-      <h3>Sound familiar?</h3>
-      <p>If this article describes something happening in your business, a short conversation is the easiest way to work out whether it's worth acting on.</p>
-      <a class="btn btn--primary" href="/contact/">Start a conversation</a>
+      <h1>{{ title }}</h1>
+    </header>
+
+    <div class="prose">
+      {{ content | safe }}
     </div>
   </div>
 </article>
+
+<section class="section section--top">
+  <div class="shell shell--narrow">
+    <div class="starthere">
+      <p class="eyebrow eyebrow--pine">Start here</p>
+      <h2 class="h2" style="margin-top:18px;">Not sure where the margin opportunity sits? That&rsquo;s a normal place to start.</h2>
+      <p>Most engagements begin with a short, no-cost conversation about what&rsquo;s happening in your numbers. If we don&rsquo;t think we can move them, we&rsquo;ll say so.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/contact/">Schedule an assessment</a>
+        <a class="btn btn--ghost" href="/insights/">More insights</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,73 +1,96 @@
 ---
 layout: layouts/base.njk
-title: "Contact"
-description: "Start a conversation with Revora about pricing, promotions, portfolio or trade terms. No cost, no obligation — just a straight answer on whether we can help."
-permalink: /contact/
-darkHeader: true
+title: Contact
+description: "Schedule a commercial assessment with Northform RGM Advisory. Most engagements start with a short, no-cost conversation about what's happening in your numbers."
+permalink: /contact/index.html
 ---
 
-<section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow eyebrow--dark">Contact</span>
-    <h1>Tell us what's in front of you</h1>
-    <p class="lede">A cost increase to land, a promo plan that isn't paying, a range review on the horizon &mdash; whatever it is, the first conversation costs nothing and comes with a straight answer.</p>
-  </div>
+<section class="shell hero">
+  <p class="eyebrow">Contact</p>
+  <h1 class="display" style="margin-top:26px; max-width:18ch;">Schedule an assessment.</h1>
+  <p class="lede hero__lede">Most engagements begin with a short, no-cost conversation about what&rsquo;s happening in your numbers. If we don&rsquo;t think we can move them, we&rsquo;ll say so.</p>
 </section>
 
-<section class="section">
-  <div class="wrap contact-grid">
-    <div class="contact-info reveal">
-      <h2>What happens next</h2>
-      <p>No sales sequence, no discovery workshops before you've decided anything. Here's the actual process:</p>
-      <ol class="next-steps">
-        <li><span class="n">1</span><span>We reply within one working day to set up a call at a time that suits you.</span></li>
-        <li><span class="n">2</span><span>On the call (20&ndash;30 minutes) we dig into the problem and tell you honestly whether we think we can move the numbers.</span></li>
-        <li><span class="n">3</span><span>If it makes sense to go further, you'll get a short written proposal &mdash; scope, timing, fee &mdash; within the week. If it doesn't, we'll say so and suggest where else to look.</span></li>
-      </ol>
-      <div class="contact-direct">
-        <p><strong>Prefer to skip the form?</strong></p>
-        <p>Email <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        <p>Call <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></p>
-      </div>
-    </div>
+<section class="section" style="padding-top:0;">
+  <div class="shell">
+    <div class="contact-grid">
 
-    <form class="contact-form reveal" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="visually-hidden">
-        <label>Don't fill this out if you're human: <input name="bot-field"></label>
-      </p>
-      <div class="form-field">
-        <label for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name" required>
+      <div>
+        <form name="assessment" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/thanks/">
+          <input type="hidden" name="form-name" value="assessment">
+          <p class="visually-hidden">
+            <label>Leave this field empty <input name="company-website" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="role">Role</label>
+              <input id="role" name="role" type="text" autocomplete="organization-title">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="opt">optional</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="focus">Where&rsquo;s the pressure showing up?</label>
+            <select id="focus" name="focus">
+              <option value="Not sure yet">Not sure yet, that&rsquo;s fine</option>
+              <option value="Pricing">Pricing and pack architecture</option>
+              <option value="Trade investment">Trade investment and promotional ROI</option>
+              <option value="Portfolio and mix">Portfolio and range mix</option>
+              <option value="Trade terms">Customer terms and profitability</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">What&rsquo;s happening in your numbers?</label>
+            <textarea id="message" name="message" rows="6" placeholder="A sentence or two is plenty. Where the margin pressure is showing up, and what you&rsquo;ve already tried."></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Send</button>
+          <p class="form-note">We reply within one working day. Nothing you send is shared with anyone.</p>
+        </form>
       </div>
-      <div class="form-field">
-        <label for="company">Company</label>
-        <input type="text" id="company" name="company" autocomplete="organization" required>
-      </div>
-      <div class="form-field">
-        <label for="email">Work email</label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
-      </div>
-      <div class="form-field">
-        <label for="phone">Phone <span class="optional">(optional)</span></label>
-        <input type="tel" id="phone" name="phone" autocomplete="tel">
-      </div>
-      <div class="form-field">
-        <label for="topic">What's this mostly about?</label>
-        <select id="topic" name="topic">
-          <option>Pricing / price pack architecture</option>
-          <option>Promotions / trade investment</option>
-          <option>Portfolio / range</option>
-          <option>Trade terms / negotiations</option>
-          <option>Not sure yet — that's fine</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label for="message">What's going on?</label>
-        <textarea id="message" name="message" placeholder="A few sentences is plenty — we'll dig into the detail on the call." required></textarea>
-      </div>
-      <button class="btn btn--primary" type="submit">Send message</button>
-      <p class="form-note">We'll only use your details to respond to this enquiry. No newsletters unless you ask for one.</p>
-    </form>
+
+      <aside class="contact-aside">
+        <h2 class="h3">Or go direct</h2>
+        <ul class="footer__list" style="margin-top:20px;">
+          <li><a href="tel:{{ site.phoneLink }}" class="contact-direct">{{ site.phone }}</a></li>
+          <li><a href="mailto:{{ site.email }}" class="contact-direct">{{ site.email }}</a></li>
+        </ul>
+
+        <hr class="rule" style="margin:32px 0;">
+
+        <h2 class="h3">What to expect</h2>
+        <ol class="expect">
+          <li><span>A 30-minute conversation about where margin pressure is showing up in your business.</span></li>
+          <li><span>An honest read on whether there is something worth pursuing, and roughly what it might be worth.</span></li>
+          <li><span>If it makes sense, a scoped proposal. If it doesn&rsquo;t, we&rsquo;ll tell you that instead.</span></li>
+        </ol>
+
+        <hr class="rule" style="margin:32px 0;">
+
+        <p style="font-size:14.5px; color:var(--slate);">Northform works with New Zealand FMCG suppliers. If you are a retailer or sit outside grocery, get in touch anyway and we will tell you straight away whether we are the right fit.</p>
+      </aside>
+
+    </div>
   </div>
 </section>

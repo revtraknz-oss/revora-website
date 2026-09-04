@@ -1,30 +1,60 @@
 ---
-title: "Recovering cost without burning the relationship"
-date: 2026-05-19
-category: "Pricing"
-excerpt: "Cost increases are a fact of life. Botched price increases don't have to be. What separates the suppliers who recover margin from the ones who just have a hard meeting?"
+title: "Recovering a cost increase without losing the shelf"
+date: 2026-07-22
+category: Pricing
+excerpt: "The list price rise is the most visible way to recover cost, and often the worst. Four other levers usually do more of the work, and all of them are less likely to trigger a range review."
+image: "/assets/img/checkout.jpg"
+description: "How New Zealand FMCG suppliers can recover input cost inflation through pack architecture, promotional depth, mix and terms, not just list price."
 ---
 
-Every supplier in New Zealand has lived some version of this: input costs jump, the finance team calculates the increase needed to hold margin, and an account manager gets sent into a retailer meeting carrying a number and a cost letter. The meeting goes badly. The increase lands late, or partially, or gets traded away against extra promotional funding that quietly gives back everything the price move gained.
+When input costs move, the default response is a list price increase. It is the most direct lever, it is the one the finance team asks for, and it is the one most likely to end in a difficult conversation with your customer.
 
-The frustrating part is that the outcome is mostly decided before anyone walks into the room. Suppliers who recover cost well don't have braver account managers. They do three things differently in the weeks beforehand.
+It is rarely the only lever, and it is often not the best one.
 
-## They know what the shelf can bear
+## Why the straight price rise is expensive
 
-A cost-recovery number and a market-facing price are not the same thing. Before deciding what to ask for, it's worth knowing where your prices sit on the category ladder, which price points are psychological thresholds for your shoppers, and what happened to volume the last two or three times prices moved — yours and your competitors'.
+A list price increase does three things at once, and only one of them is intended.
 
-Sometimes this work tells you the full increase will stick with barely a ripple. Sometimes it tells you that pushing a hero SKU through a key price point will cost you more volume than the margin is worth, and the smarter play is an uneven increase across the range — or a pack change that resets the comparison entirely. Either way, you want to know before the negotiation, not after.
+It recovers cost on every unit, which is the point. It also moves your shelf price relative to the competitor, which invites shoppers to reconsider. And in a consolidated retail landscape it opens a negotiation in which the retailer has every incentive to seek compensation elsewhere: more promotional support, better terms, or a review of your range.
 
-## They bring evidence, not just a letter
+That third effect is the one suppliers underestimate. Margin recovered on the price line can go straight back out through the trade spend line, and the net position after the negotiation is sometimes worse than before it.
 
-Buyers hear cost stories every week, and they've developed excellent filters. What cuts through is specificity: which inputs moved, by how much, what you've already absorbed, and what you're doing internally before asking the retailer to carry their share. A supplier who can show they've taken cost out of their own operation first has a fundamentally different conversation than one who simply passes the pain along.
+## Four levers that don't start that conversation
 
-It also pays to think about the buyer's problem. They have their own margin targets and their own price perception battles. An increase proposal that arrives with a plan — timing that avoids their key trading periods, a promotional programme that keeps their headline prices sharp, maybe a range tweak that helps their category story — gets treated differently than a bare demand.
+### Pack architecture
 
-## They sequence deliberately
+Recovering cost through pack size, format or count changes the price-per-unit economics without changing the shelf price the shopper anchors to. It needs lead time and a coherent story across the range, which is why it works: it reads as a considered move instead of a reaction.
 
-Who moves first, and when, is a genuine strategic choice. Moving with the market beats moving alone. Landing an increase before a major range review beats landing it during one. And spacing increases so shoppers meet one change at a time beats stacking a price rise on top of a pack change on top of a promo reduction, which is how brands end up in the trolley-swap stories.
+### Promotional depth and frequency
 
-None of this is glamorous work. It's preparation. But margin recovered through pricing drops almost entirely to the bottom line — which makes the fortnight of homework before a price move some of the highest-value time a commercial team spends all year.
+If a line is promoted at 30% off every third week, its effective average selling price sits far below list. Reducing depth by a few points, or stretching the cycle, recovers margin across a large volume base without touching the everyday price at all. Shoppers respond to the deal price they see, not the list price they don't.
 
-The suppliers who treat price increases as a project, with analysis and a plan, recover meaningfully more than the ones who treat them as a meeting. In this market, over time, that difference compounds into something that shows up in the annual result.
+### Mix
+
+Shifting volume toward higher-margin SKUs, packs or channels recovers cost at the portfolio level. It is slower and needs the range work done first, but it is the only lever that improves margin without anyone having to accept a worse price.
+
+### Terms
+
+Trade investment structures negotiated years ago are often still running unchanged against a customer base that has since consolidated. Re-tying investment to current performance is a legitimate cost recovery conversation, and a different one from a price rise.
+
+## Sequencing matters more than the individual moves
+
+The mistake is treating these as alternatives and picking one. In practice the recovery plan is a sequence, and the sequence decides how much resistance it meets.
+
+A worked plan usually runs like this. Quantify the total recovery required. Establish how much can come from promotional efficiency and mix without any customer conversation at all. Work out what pack architecture can carry over the following six to twelve months. Only then size the list price movement needed to close the remaining gap.
+
+Suppliers who run that sequence often find the increase they need is materially smaller than the one they were about to ask for, and a smaller ask is a far easier negotiation.
+
+## Bring the elasticity evidence
+
+Whatever the size of the move, the conversation goes better with evidence attached. A retailer's first objection to a price increase is volume risk, and it is a fair objection.
+
+If you can show what your own elasticity data says about the likely volume response, what happened the last time the category took price, and where your price sits against the competitive set, you are having a commercial discussion instead of a defensive one. Without it, the only argument available is that your costs went up, which is true and which is not the retailer's problem.
+
+## What good looks like afterwards
+
+Cost recovery isn't a one-off exercise. The businesses that handle it well have built a repeatable read on their own price and promotional position, so the next increase is a calculation instead of a scramble.
+
+---
+
+*Northform works with New Zealand FMCG suppliers on pricing architecture, elasticity evidence and cost recovery planning. [Start a conversation](/contact/).*

@@ -1,39 +1,65 @@
 ---
-title: "The promo review most suppliers never run"
-date: 2026-06-24
-category: "Promotions & Trade"
-excerpt: "Plenty of businesses review whether promotions hit their volume targets. Very few ask the harder question: what did that volume actually cost us?"
+title: "How to find the 15–25% hiding in your promotional history"
+date: 2026-08-12
+category: Trade Investment
+excerpt: "Most suppliers evaluate promotions on uplift. Uplift is the least useful number in the file, and swapping it for incremental margin is usually where the first real gain comes from."
 image: "/assets/img/aisle-blur.jpg"
+description: "A practical method for auditing promotional history in FMCG: separating incremental volume from pantry loading and cannibalisation, and finding the promotions that never paid."
 ---
 
-Ask most commercial teams how last quarter's promotions went and you'll get an answer about volume. "The half-price event did 4x baseline." "We hit our share target during the feature week." Volume is easy to see, easy to report, and it makes everyone feel like the money worked.
+Ask most FMCG suppliers how their promotions performed last year and you will get an uplift number. The event sold 340% of base. It sounds like a result.
 
-Here's the review that almost nobody runs: take your ten biggest promotional events from last year and work out, honestly, what each one returned after you count everything. The funding you paid. The margin you gave away on every unit, including all the units you would have sold at full price anyway. The dip in the weeks after the event, when shoppers who stocked up at the deal price simply stopped buying.
+It isn't one. Uplift tells you what happened to volume. It tells you nothing about whether the money you spent to buy that volume came back, and in a lot of promotional calendars a meaningful share of it doesn't.
 
-When we run this exercise with suppliers, the pattern is remarkably consistent. A handful of events genuinely build the business. A larger group roughly breaks even. And a meaningful chunk — often a quarter to a third of the calendar — actively destroys money. Not underperforms. Destroys.
+## The number that actually matters
 
-## Why doesn't anyone notice?
+The question a promotion has to answer is narrow. Did the incremental margin it generated exceed the investment it consumed?
 
-A few reasons, none of them stupid.
+That requires three things most reporting doesn't separate:
 
-First, the numbers that would tell you are scattered. Scan data sits in one place, funding in another, cost of goods in a third. Nobody's job is to join them at the event level, so nobody does.
+- A defensible baseline. What would have sold anyway, without the promotion. Not last year's same week, which was probably also on promotion.
+- Incremental volume rather than total volume. Everything above that baseline, and only that.
+- The full cost of the event: off-invoice, scan spend, co-op contributions, and the margin given away on the units that would have sold at full price regardless.
 
-Second, the incentives point the other way. Account managers are measured on volume and share. The retailer wants the event. Pulling a promotion feels like going backwards, even when the maths says it's the best decision available.
+That last one is where most promotional maths falls apart. If a third of the volume moved on deal would have sold anyway, you have funded a discount on it for nothing. That subsidy is real money, and it rarely shows up in a post-promotional review.
 
-Third, there's history. "We've always done the February deal" is one of the most expensive sentences in FMCG. Events survive for years past the point anyone can explain what they're for.
+## Three leaks that show up almost every time
 
-## What the good version looks like
+### Pantry loading
 
-The fix isn't complicated, but it does require being systematic:
+A deep promotion on a storable category pulls forward demand rather than creating it. Volume looks excellent in week one and poor for the following three. Evaluate the event in isolation and it passes. Evaluate an eight-week window around it and the incremental volume shrinks, sometimes to nothing.
 
-- **Measure incrementality, not volume.** The question is never "how much did we sell on deal?" It's "how much did we sell that we wouldn't have sold otherwise?" Those are wildly different numbers.
-- **Load in the full cost.** Funding, margin give on baseline units, post-promo dips. If the event only looks good when you leave things out, it isn't good.
-- **Sort the calendar into three buckets.** Events that grow the business: protect and extend them. Events that break even but matter strategically — defending a shelf position, supporting a launch: keep them, but know why. Events that lose money and do nothing else: these are your negotiating currency for the next retailer conversation.
+### Cannibalisation within your own range
 
-That last point matters. The goal usually isn't to slash promotional spend — in the New Zealand market, with the retailer concentration we have, that's rarely realistic. The goal is to move money from events that don't work to events that do. Same investment, better business.
+The promoted SKU performs. The two adjacent SKUs it stole from don't get counted. Portfolio-level incremental volume ends up well below the SKU-level number that got reported to the team.
 
-## A place to start
+### Frequency erosion
 
-You don't need a big project to test whether this is worth your time. Pick your single biggest promotional event from last year and cost it properly — a spreadsheet and an honest afternoon will do it. If the answer surprises you, the rest of the calendar deserves the same treatment.
+A line promoted every third week has effectively repriced itself. Shoppers wait. The base you are measuring uplift against has already been dragged down by the promotional pattern itself, which flatters every event that follows.
 
-In our experience, it almost always surprises people.
+## What the audit looks like in practice
+
+You need twelve to twenty-four months of promotional history, scan data at SKU level, and the actual investment by event. Most suppliers have all three. They are just held in three different places by three different people.
+
+From there:
+
+1. Rebuild the baseline from non-promoted periods, adjusted for seasonality and distribution changes.
+2. Calculate incremental margin per event: incremental units at the promoted margin, less the discount funded on baseline units, less all direct investment.
+3. Rank every event by ROI rather than by volume. The ranking is almost always a surprise to somebody.
+4. Look at the bottom decile honestly. In most calendars a group of events has never paid for itself and keeps running because it is on the plan.
+
+## Why the ranking matters more than the average
+
+An average promotional ROI across the calendar is a comfortable number that hides the shape of the problem. The distribution is what you act on, and it usually looks like this: a set of events that pay well, a large middle that roughly breaks even, and a tail that loses money reliably.
+
+Reallocating from the tail toward the top of the ranking is the fastest margin improvement available in most FMCG businesses. It costs nothing to implement, because the spend already exists. It doesn't require a price increase or a retailer concession either.
+
+## The harder conversation
+
+The reason this analysis often sits undone isn't technical. It is that the tail of the calendar usually contains events somebody promised a customer, and retiring them means a conversation.
+
+That conversation is easier with the evidence in hand. "We're reducing promotional depth" is a position you have to defend. "This event has run six times, and here is what it returned each time" is a position the numbers defend for you.
+
+---
+
+*Northform works with New Zealand FMCG suppliers on pricing, trade investment, portfolio mix and customer terms. If your promotional history has never been audited this way, [that's a normal place to start](/contact/).*
