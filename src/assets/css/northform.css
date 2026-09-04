@@ -875,15 +875,16 @@ p { margin: 0; max-width: var(--measure); }
 .hero__figure {
   margin: 0;
   position: relative;
-  align-self: stretch;
-  min-height: 340px;
+  align-self: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
 }
 
 .hero__figure img {
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 340px;
-  max-height: 560px;
   object-fit: cover;
   object-position: center;
   filter: saturate(.72) contrast(1.02);
@@ -894,14 +895,14 @@ p { margin: 0; max-width: var(--measure); }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(26, 42, 74, .16), rgba(26, 42, 74, .30));
+  background: linear-gradient(180deg, rgba(26, 42, 74, .14), rgba(26, 42, 74, .26));
   pointer-events: none;
 }
 
 @media (max-width: 900px) {
   .hero--split { grid-template-columns: 1fr; gap: 36px; }
   .hero--split .display { max-width: 17ch; }
-  .hero__figure, .hero__figure img { min-height: 260px; max-height: 320px; }
+  .hero__figure { aspect-ratio: 4 / 3; }
 }
 
 /* ------------------------------------------------------- practice links */
