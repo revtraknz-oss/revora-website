@@ -16,7 +16,10 @@ description: "Northform RGM Advisory helps New Zealand FMCG suppliers find the m
   </div>
   {% if home.hero.image %}
   <figure class="hero__figure">
-    <img src="{{ home.hero.image }}" alt="{{ home.hero.image_alt }}" width="900" height="1200" fetchpriority="high">
+    <img src="{{ home.hero.image }}"
+         {% if home.hero.image_small %}srcset="{{ home.hero.image_small }} 800w, {{ home.hero.image }} 1200w"
+         sizes="(max-width: 900px) 100vw, 42vw"{% endif %}
+         alt="{{ home.hero.image_alt }}" width="1200" height="1500" fetchpriority="high">
   </figure>
   {% endif %}
 </section>
