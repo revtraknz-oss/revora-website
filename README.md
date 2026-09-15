@@ -112,9 +112,15 @@ Categories: `Pricing`, `Trade Investment`, `Portfolio & Mix`, `Trade Terms`, `Ma
 
 ## The contact form
 
-Uses Netlify Forms, so there is no backend to run. It works once deployed and will not submit from `localhost`.
+Uses Netlify Forms, so there is no backend to run. It will not submit from .
 
-Submissions appear under **Forms** in the Netlify dashboard. Set up email notifications there so they don't sit unread. A honeypot field catches most spam.
+**Netlify turns form detection off by default, and the form silently fails until it is switched on.** Submitting while it is off lands on a browser "page can't be found" error at , even though that page loads fine on its own. To turn it on:
+
+1. In the Netlify project, go to **Forms → Enable form detection**.
+2. **Redeploy.** Netlify only scans for forms during a build, so enabling detection does nothing until the next deploy. Use **Deploys → Trigger deploy → Deploy site**.
+3. Check it worked: view the source of  on the live site. Once Netlify has processed the form, the  attribute is gone.
+
+Submissions then appear under **Forms** in the Netlify dashboard. Add an email notification under **Project configuration → Notifications → Form submission notifications**, pointed at an inbox that actually receives mail. A honeypot field catches most spam.
 
 ## Content rules
 
