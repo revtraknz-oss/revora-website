@@ -4,6 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    // Netlify Identity emails (invite, password reset, email confirmation) link to the
+    // site root with a token in the URL hash. The login widget only loads on /admin/,
+    // so forward those links there instead of loading it on every public page.
+    (function () {
+      var hash = window.location.hash;
+      if (/(invite|recovery|confirmation|email_change)_token=/.test(hash)) {
+        window.location.replace("/admin/" + hash);
+      }
+    })();
+  </script>
+
   <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.fullName }} | {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ description | default('Northform RGM Advisory helps New Zealand FMCG suppliers strengthen pricing strategy, optimise trade investment and build the commercial discipline that protects margin.') }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
